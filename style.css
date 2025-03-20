@@ -1,0 +1,301 @@
+@font-face {
+    font-family: font1;
+    src: url(fonts/GeneralSans-Medium.otf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(fonts/GeneralSans-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#crsr {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+    border-radius: 50px;
+    mix-blend-mode: difference;
+    transition: all ease 0.01s;
+}
+
+main {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    cursor: none;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: font1;
+    padding: 50px;
+}
+
+#menu:hover {
+    text-decoration: underline;
+}
+
+#menu-bar {
+    height: 50px;
+    width: 30%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: font1;
+    position: absolute;
+    right: 30px;
+    top: -10%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+#heading {
+    height: 500px;
+    width: 100%;
+    font-family: font2;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+#heading h1 {
+    font-size: 10vw;
+    margin-left: 50px;
+    color: #A3A3A3;
+}
+
+#heading h2 {
+    font-size: 10vw;
+    margin-left: 200px;
+    color: #A3A3A3;
+}
+
+#heading h4 {
+    margin-left: 800px;
+}
+
+#bottam {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    font-family: font1;
+    padding: 70px;
+    position: relative;
+}
+
+#bottam a {
+    text-decoration: none;
+}
+
+#container {
+    min-height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 45px;
+    margin-top: 50px;
+}
+
+.elem {
+    height: 300px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-family: font2;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.elem {
+    font-size: 4vw;
+}
+
+.elem h1 {
+    opacity: 0.8;
+}
+
+.elem h3 {
+    font-size: 20px;
+}
+
+.elem img {
+    height: 130%;
+    position: absolute;
+    z-index: 99;
+    opacity: 0;
+    border-radius: 30px;
+}
+
+#butt {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    font-family: font1;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#anime-cont {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+#animation {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    gap: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#animation::-webkit-scrollbar {
+    display: none;
+}
+
+#ani-move {
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#ani-move img {
+    height: 100px;
+    width: 100px;
+}
+
+#about-cont {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 20px;
+}
+
+#my-pic {
+    height: 350px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-pic img {
+    height: 250px;
+    border-radius: 100%;
+}
+
+#about-me {
+    height: 350px;
+    width: 40%;
+    font-family: font2;
+    text-align: center;
+}
+
+#about-me h2 {
+    font-size: 40px;
+}
+
+#about-me p {
+    line-height: 1.5;
+    font-size: 25px;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#footer-p1 {
+    display: flex;
+    font-family: font1;
+    font-size: 25px;
+    gap: 15px;
+}
+
+#footer-p2 {
+    display: flex;
+    gap: 40px;
+
+}
+
+#footer-p2 a {
+    text-decoration: none;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: font1;
+
+}
